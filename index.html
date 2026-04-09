@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CatProject - Private Browser</title>
+    <style>
+        body {
+            background-color: #3e2731; /* Tor-style Purple */
+            color: white;
+            font-family: -apple-system, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+        /* The Cat Button in the top bar */
+        .top-bar {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 40px;
+            background: #2b1d23;
+            display: flex;
+            align-items: center;
+            padding-left: 20px;
+            border-bottom: 1px solid #5d4037;
+        }
+        .cat-home-btn {
+            background: none;
+            border: none;
+            font-size: 20px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        .logo { font-size: 70px; margin-bottom: 10px; }
+        .status { font-size: 24px; margin-bottom: 5px; }
+        .status span { color: #ba68c8; font-weight: bold; }
+        
+        /* Monterey Warning */
+        .os-badge {
+            background: #5d4037;
+            color: #ffcc80;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 12px;
+            margin-bottom: 30px;
+            border: 1px solid #795548;
+        }
+
+        .search-box {
+            width: 500px;
+            padding: 15px;
+            border-radius: 25px;
+            border: 2px solid #5d4037;
+            background: #2b1d23;
+            color: white;
+            font-size: 16px;
+            text-align: center;
+        }
+        .download-area {
+            margin-top: 40px;
+            text-align: center;
+        }
+        .btn {
+            background: #ba68c8;
+            color: white;
+            padding: 15px 40px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: bold;
+            display: inline-block;
+        }
+        .specs {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #ce93d8;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="top-bar">
+        <a href="#" class="cat-home-btn">🐱</a>
+    </div>
+
+    <div class="logo">🐱</div>
+    <div class="status">CatBrowser is <span>Ready</span>.</div>
+    <div class="os-badge">Exclusively for macOS Monterey 12.7.6</div>
+
+    <input type="text" class="search-box" placeholder="Search privately...">
+
+    <div class="download-area">
+        <a href="https://github.com" class="btn">
+            Download for Monterey
+        </a>
+        <div class="specs">0 Tabs • 0% RAM Waste • WebKit Core</div>
+    </div>
+
+</body>
+</html>
